@@ -10,7 +10,7 @@ anekdots = [
     "Муж говорит жене: \n— Дорогая, я похудел! \nЖена: \n— Ты просто выдохнул..."
 ]
 
-TOKEN = "8173838684:AAF7WMZKWZlAhq3XIEY77sdO8jfOMve82LY"
+TOKEN = "#"
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
@@ -55,5 +55,6 @@ def reply(message):
             
     else:
         bot.send_message(message.chat.id, " I dont understand u")
+
 
 bot.polling(none_stop = True)
